@@ -4,9 +4,9 @@ EXPOSE 80
 
 ## Why This Works Perfectly
 
-cmd:v1 already has:
-✅ almalinux:9 as base
-✅ nginx installed
-✅ CMD to start nginx
+#cmd:v1 already has:
+#✅ almalinux:9 as base
+#✅ nginx installed
+#✅ CMD to start nginx
 
-We just ADD our own webpage using COPY!
+#We just ADD our own webpage using COPY!
