@@ -6,6 +6,11 @@
 #  Run: bash install-docker.sh
 # ─────────────────────────────────────────
 
+growpart /dev/nvme0n1 4
+pvresize /dev/nvme0n1p4
+lvextend -L +30G /dev/mapper/RootVG-varVol
+xfs_growfs /var
+
 echo "─────────────────────────────────"
 echo "  Starting Docker Installation"
 echo "─────────────────────────────────"
